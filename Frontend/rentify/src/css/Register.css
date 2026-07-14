@@ -1,0 +1,157 @@
+.registerPage{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:90px 0;
+    background:
+        radial-gradient(circle at 15% 15%,rgba(37,99,235,.18),transparent 30%),
+        radial-gradient(circle at 85% 20%,rgba(59,130,246,.15),transparent 30%),
+        radial-gradient(circle at 50% 100%,rgba(37,99,235,.10),transparent 35%),
+        linear-gradient(135deg,#020617 0%,#07152d 45%,#0f172a 100%);
+}
+
+.registerPage::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    top:-220px;
+    right:-180px;
+    border-radius:50%;
+    background:#2563eb;
+    opacity:.18;
+    filter:blur(130px);
+}
+
+.registerPage::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    left:-180px;
+    bottom:-180px;
+    border-radius:50%;
+    background:#3b82f6;
+    opacity:.12;
+    filter:blur(120px);
+}
+
+.registerCard{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(24px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:32px;
+    padding:45px;
+    box-shadow:0 35px 80px rgba(0,0,0,.45);
+    transition:.35s;
+}
+
+.registerCard:hover{
+    transform:translateY(-5px);
+}
+
+.registerCard h2{
+    color:#151755;
+    font-size:38px;
+    font-weight:800;
+    margin-bottom:30px;
+}
+
+.registerCard input,
+.registerCard textarea,
+.registerCard select{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    color:#2c2068;
+    border-radius:16px;
+    padding:14px 18px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.registerCard input::placeholder,
+.registerCard textarea::placeholder{
+    color:#1d385b;
+}
+
+.registerCard select{
+    color:#1d2558;
+}
+
+.registerCard select option{
+    color:#000;
+}
+
+.registerCard input:focus,
+.registerCard textarea:focus,
+.registerCard select:focus{
+    background:rgba(255,255,255,.12);
+    border-color:#3b82f6;
+    color:#fff;
+    box-shadow:0 0 0 4px rgba(37,99,235,.20);
+}
+
+.registerCard button{
+    width:100%;
+    height:58px;
+    border:none;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:700;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    box-shadow:0 20px 45px rgba(37,99,235,.35);
+    transition:.35s;
+}
+
+.registerCard button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 30px 60px rgba(37,99,235,.45);
+}
+
+.registerCard p{
+    color:#cbd5e1;
+    margin-top:25px;
+}
+
+.registerCard a{
+    color:#60a5fa;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.registerCard a:hover{
+    color:#93c5fd;
+}
+
+@media(max-width:992px){
+
+.registerPage{
+    padding:70px 0;
+}
+
+.registerCard{
+    padding:35px 28px;
+}
+
+}
+
+@media(max-width:768px){
+
+.registerPage{
+    padding:60px 0;
+}
+
+.registerCard{
+    border-radius:24px;
+    padding:28px 22px;
+}
+
+.registerCard h2{
+    font-size:30px;
+}
+
+}

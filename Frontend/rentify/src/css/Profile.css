@@ -1,0 +1,117 @@
+.profilePage{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    padding:70px 0;
+    background:
+        radial-gradient(circle at 15% 15%,rgba(37,99,235,.18),transparent 30%),
+        radial-gradient(circle at 85% 20%,rgba(59,130,246,.15),transparent 30%),
+        radial-gradient(circle at 50% 100%,rgba(37,99,235,.10),transparent 35%),
+        linear-gradient(135deg,#020617 0%,#07152d 45%,#0f172a 100%);
+}
+
+.profilePage::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    top:-220px;
+    right:-180px;
+    border-radius:50%;
+    background:#2563eb;
+    opacity:.15;
+    filter:blur(120px);
+}
+
+.profileCard{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:30px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.profileIcon{
+    width:110px;
+    height:110px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(37,99,235,.15);
+    color:#60a5fa;
+    font-size:60px;
+    margin-bottom:25px;
+}
+
+.profileCard h2{
+    color:#fff;
+    font-size:38px;
+    font-weight:800;
+}
+
+.profileCard p{
+    color:#cbd5e1;
+    margin-bottom:40px;
+}
+
+.profileInfo{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.infoBox{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    text-align:left;
+}
+
+.infoBox svg{
+    font-size:32px;
+    color:#3b82f6;
+}
+
+.infoBox span{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.infoBox h5{
+    color:#fff;
+    margin:4px 0 0;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+.profileCard{
+    padding:30px 22px;
+}
+
+.profileIcon{
+    width:90px;
+    height:90px;
+    font-size:48px;
+}
+
+.profileCard h2{
+    font-size:30px;
+}
+
+.infoBox{
+    gap:15px;
+    padding:16px;
+}
+
+}

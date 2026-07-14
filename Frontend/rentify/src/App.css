@@ -1,0 +1,83 @@
+:root{
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+    --secondary:#60A5FA;
+
+    --bg:#F8FAFC;
+    --card:#FFFFFF;
+
+    --text:#0F172A;
+    --muted:#64748B;
+
+    --radius:24px;
+
+    --shadow:
+    0 10px 25px rgba(15,23,42,.05),
+    0 20px 50px rgba(15,23,42,.08);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+#root{
+
+    width:100%;
+    min-height:100vh;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    transition:.35s ease;
+
+}
+
+.container{
+
+    max-width:1320px;
+
+}
+
+.card{
+
+    border:none;
+    border-radius:var(--radius);
+    background:var(--card);
+    box-shadow:var(--shadow);
+
+}

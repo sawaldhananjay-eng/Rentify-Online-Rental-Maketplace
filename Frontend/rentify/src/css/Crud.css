@@ -1,0 +1,229 @@
+.crudPage{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    padding:60px 0 100px;
+    background:
+        radial-gradient(circle at 15% 15%,rgba(37,99,235,.18),transparent 30%),
+        radial-gradient(circle at 85% 20%,rgba(59,130,246,.15),transparent 30%),
+        radial-gradient(circle at 50% 100%,rgba(37,99,235,.10),transparent 35%),
+        linear-gradient(135deg,#020617 0%,#07152d 45%,#0f172a 100%);
+}
+
+.crudPage::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    top:-220px;
+    right:-180px;
+    border-radius:50%;
+    background:#2563eb;
+    opacity:.15;
+    filter:blur(120px);
+}
+
+.crudPage::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    left:-180px;
+    bottom:-180px;
+    border-radius:50%;
+    background:#3b82f6;
+    opacity:.10;
+    filter:blur(120px);
+}
+
+.crudPage h2{
+    color:#fff;
+    font-size:38px;
+    font-weight:800;
+    margin-bottom:35px;
+}
+
+.formCard{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.formCard h2{
+    color:#fff;
+}
+
+.formCard input,
+.formCard textarea,
+.formCard select{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    color:#fff;
+    border-radius:16px;
+    padding:14px 18px;
+    margin-bottom:18px;
+}
+
+.formCard input::placeholder,
+.formCard textarea::placeholder{
+    color:#cbd5e1;
+}
+
+.formCard select{
+    color:#fff;
+}
+
+.formCard select option{
+    color:#000;
+}
+
+.formCard input:focus,
+.formCard textarea:focus,
+.formCard select:focus{
+    background:rgba(255,255,255,.12);
+    border-color:#3b82f6;
+    color:#fff;
+    box-shadow:0 0 0 4px rgba(37,99,235,.20);
+}
+
+.formCard button{
+    width:100%;
+    height:58px;
+    border:none;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:700;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#fff;
+    transition:.35s;
+    box-shadow:0 18px 40px rgba(37,99,235,.30);
+}
+
+.formCard button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 30px 60px rgba(37,99,235,.40);
+}
+
+.itemCard{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:24px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+}
+
+.itemCard:hover{
+    transform:translateY(-10px);
+    border-color:#3b82f6;
+    box-shadow:0 30px 60px rgba(37,99,235,.25);
+}
+
+.itemCard img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.itemCard .card-body{
+    padding:24px;
+}
+
+.itemCard h5{
+    color:#fff;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.itemCard p{
+    color:#cbd5e1;
+    margin-bottom:12px;
+}
+
+.itemCard h6,
+.itemCard h4{
+    color:#60a5fa;
+    font-weight:700;
+}
+
+.itemCard .btn{
+    margin-top:12px;
+    border:none;
+    border-radius:14px;
+    font-weight:700;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:#fff;
+}
+
+.itemCard .btn:hover{
+    transform:translateY(-3px);
+}
+
+.table{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:20px;
+    overflow:hidden;
+    color:#fff;
+}
+
+.table thead{
+    background:#1e3a8a;
+    color:#fff;
+}
+
+.table td,
+.table th{
+    border-color:rgba(255,255,255,.08);
+    vertical-align:middle;
+}
+
+.table-hover tbody tr:hover{
+    background:rgba(59,130,246,.12);
+}
+
+.badge{
+    padding:8px 14px;
+    border-radius:10px;
+}
+
+@media(max-width:992px){
+
+.formCard{
+    padding:30px;
+}
+
+.crudPage h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:768px){
+
+.crudPage{
+    padding:40px 0 70px;
+}
+
+.formCard{
+    padding:24px;
+    border-radius:22px;
+}
+
+.itemCard img{
+    height:220px;
+}
+
+.crudPage h2{
+    font-size:28px;
+}
+
+}
